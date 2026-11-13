@@ -1,4 +1,3 @@
-## Hi there 👋
 <div align="center">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:090D16,50:1E1B4B,100:0284C7&height=200&section=header&text=Aarit%20Gupta&fontSize=54&fontColor=38BDF8&animation=fadeIn&fontAlignY=38&desc=AI%20Systems%20Architect%20%E2%80%A2%20Multi-Agent%20%26%20Robotics%20Engineer&descAlignY=60&descSize=16&descColor=E2E8F0" alt="Aarit Gupta Header"/>
 </div>
@@ -30,7 +29,7 @@
   <tr>
     <td width="58%" valign="top">
 
-json
+```json
 {
   "name": "Aarit Gupta",
   "location": "Bengaluru, Karnataka, India",
