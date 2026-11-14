@@ -1,0 +1,34 @@
+name: Refresh animated profile art
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate_profile_art.py"
+      - ".github/workflows/refresh-profile-art.yml"
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      GH_PROFILE_USER: aarit88
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch live contribution data and render animations
+        run: python scripts/generate_profile_art.py
+      - name: Commit refreshed profile panels
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/contributions.json assets/animated
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh animated profile panels"
+            git push
+          fi

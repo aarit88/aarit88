@@ -60,3 +60,30 @@ I'm **Aarit Gupta**, a Computer Science and Engineering student at **Dr. Ambedka
 
 ---
 <p align="center"><sub>Curious about intelligent systems that connect software to the physical world.</sub></p>
+
+---
+
+## More animated profile panels
+
+These theme-aware, animated panels add the motion-led stats, activity, skills, and project presentation from the reference while keeping the existing profile content intact. Contribution figures and the calendar refresh daily from GitHub.
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/animated/developer-overview-dark.svg"/><source media="(prefers-color-scheme: light)" srcset="assets/animated/developer-overview-light.svg"/><img src="assets/animated/developer-overview-dark.svg" width="100%" alt="Animated live developer overview with contribution, commit, repository, and follower counts"/></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/animated/activity-graph-dark.svg"/><source media="(prefers-color-scheme: light)" srcset="assets/animated/activity-graph-light.svg"/><img src="assets/animated/activity-graph-dark.svg" width="100%" alt="Animated contribution activity chart for the last 31 days"/></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/animated/annual-heatmap-dark.svg"/><source media="(prefers-color-scheme: light)" srcset="assets/animated/annual-heatmap-light.svg"/><img src="assets/animated/annual-heatmap-dark.svg" width="100%" alt="Animated theme-aware annual contribution heatmap"/></picture></p>
+
+<table width="100%"><tr>
+<td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/animated/technical-toolkit-dark.svg"/><source media="(prefers-color-scheme: light)" srcset="assets/animated/technical-toolkit-light.svg"/><img src="assets/animated/technical-toolkit-dark.svg" width="100%" alt="Animated resume-aligned technical toolkit grouped by discipline"/></picture></td>
+<td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/animated/project-showcase-dark.svg"/><source media="(prefers-color-scheme: light)" srcset="assets/animated/project-showcase-light.svg"/><img src="assets/animated/project-showcase-dark.svg" width="100%" alt="Animated project cards for SwarmGrid, Sakhi, SWARMNET, and BioPods"/></picture></td>
+</tr></table>
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/animated/about-meta-dark.svg"/><source media="(prefers-color-scheme: light)" srcset="assets/animated/about-meta-light.svg"/><img src="assets/animated/about-meta-dark.svg" width="100%" alt="B.Tech CSE at Dr. Ambedkar Institute of Technology, 2023 to 2027, Bengaluru"/></picture></p>
+
+### Education, certifications & participation
+
+- **Dr. Ambedkar Institute of Technology, Bengaluru** · B.E. Computer Science & Engineering · 2023–2027
+- **Narayana E-techno School** · Senior Secondary · 80% · 2021–2023
+- **DAV Public School** · High School · 91% · 2020–2021
+- **Qualcomm Academy** · AI Technical Foundation; Hands-on Development from Model to App
+- **Hackathons participated:** Adobe Hackathon, AI for Bharat, ABB, and SIH
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/animated/credentials-dark.svg"/><source media="(prefers-color-scheme: light)" srcset="assets/animated/credentials-light.svg"/><img src="assets/animated/credentials-dark.svg" width="100%" alt="Animated Qualcomm Academy certificates and hackathon participation"/></picture></p>
