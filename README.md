@@ -87,3 +87,12 @@ These theme-aware, animated panels add the motion-led stats, activity, skills, a
 - **Hackathons participated:** Adobe Hackathon, AI for Bharat, ABB, and SIH
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/animated/credentials-dark.svg"/><source media="(prefers-color-scheme: light)" srcset="assets/animated/credentials-light.svg"/><img src="assets/animated/credentials-dark.svg" width="100%" alt="Animated Qualcomm Academy certificates and hackathon participation"/></picture></p>
+
+### Animated ASCII portrait
+
+<p align="center"><sub>Your supplied portrait, rendered as a terminal-style character mosaic with animated scan lines, a subtle row reveal, and a blinking cursor. The original photo is not included in the repository.</sub></p>
+
+<table width="100%"><tr>
+<td width="40%" valign="middle"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/animated/profile-photo-ascii-dark.svg"/><source media="(prefers-color-scheme: light)" srcset="assets/animated/profile-photo-ascii-light.svg"/><img src="assets/animated/profile-photo-ascii-dark.svg" width="100%" alt="Animated ASCII portrait of Aarit Gupta in a terminal window"/></picture></td>
+<td width="60%" valign="middle"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/animated/developer-overview-dark.svg"/><source media="(prefers-color-scheme: light)" srcset="assets/animated/developer-overview-light.svg"/><img src="assets/animated/developer-overview-dark.svg" width="100%" alt="Live developer overview panel with contribution, commit, repository, and follower counts"/></picture></td>
+</tr></table>
