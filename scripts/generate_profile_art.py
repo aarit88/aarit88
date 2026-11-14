@@ -6,7 +6,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 USER = os.getenv("GH_PROFILE_USER", "aarit88")
 OUT = ROOT / "assets" / "animated"
 DATA = ROOT / "data" / "contributions.json"
-QUERY = """query($login:String!,$from:DateTime!,$to:DateTime!){user(login:$login){followers{totalCount} repositories(privacy:PUBLIC,ownerAffiliations:OWNER,first:1){totalCount} contributionsCollection(from:$from,to:$to){totalCommitContributions totalIssueContributions totalPullRequestContributions totalReviewContributions contributionCalendar{totalContributions weeks{firstDay contributions{date contributionCount contributionLevel}}}}}}"""
+QUERY = """query($login:String!,$from:DateTime!,$to:DateTime!){user(login:$login){followers{totalCount} repositories(privacy:PUBLIC,ownerAffiliations:OWNER,first:1){totalCount} contributionsCollection(from:$from,to:$to){totalCommitContributions totalIssueContributions totalPullRequestContributions contributionCalendar{totalContributions weeks{firstDay contributionDays{date contributionCount contributionLevel}}}}}}"""
 PALETTES = {
  "dark": {"bg":"#0a101f","panel":"#111b2e","line":"#26364e","text":"#e2e8f0","muted":"#94a3b8","cyan":"#22d3ee","purple":"#a78bfa","green":"#34d399","levels":["#172338","#123f4a","#0e7490","#22d3ee","#a5f3fc"]},
  "light": {"bg":"#f8fafc","panel":"#ffffff","line":"#dbe4ef","text":"#0f172a","muted":"#475569","cyan":"#0369a1","purple":"#6d28d9","green":"#059669","levels":["#e2e8f0","#bae6fd","#7dd3fc","#0284c7","#1e3a8a"]},
@@ -29,8 +29,8 @@ def get_data():
   user=result["data"]["user"]
   if not user: raise RuntimeError(f"GitHub user {USER} not found")
   c=user["contributionsCollection"]; calendar=c["contributionCalendar"]
-  days=[{"date":day["date"],"count":day["contributionCount"],"level":day["contributionLevel"]} for week in calendar["weeks"] for day in week["contributions"]]
-  info={"user":USER,"updated":now.isoformat(),"total":calendar["totalContributions"],"commits":c["totalCommitContributions"],"issues":c["totalIssueContributions"],"pull_requests":c["totalPullRequestContributions"],"reviews":c["totalReviewContributions"],"followers":user["followers"]["totalCount"],"repositories":user["repositories"]["totalCount"],"days":days}
+  days=[{"date":day["date"],"count":day["contributionCount"],"level":day["contributionLevel"]} for week in calendar["weeks"] for day in week["contributionDays"]]
+  info={"user":USER,"updated":now.isoformat(),"total":calendar["totalContributions"],"commits":c["totalCommitContributions"],"issues":c["totalIssueContributions"],"pull_requests":c["totalPullRequestContributions"],"followers":user["followers"]["totalCount"],"repositories":user["repositories"]["totalCount"],"days":days}
   DATA.parent.mkdir(parents=True,exist_ok=True); DATA.write_text(json.dumps(info,indent=2)+"\n",encoding="utf-8"); return info
  if DATA.exists(): return json.loads(DATA.read_text(encoding="utf-8"))
  return {"user":USER,"total":None,"commits":None,"issues":None,"pull_requests":None,"reviews":None,"followers":None,"repositories":None,"days":[]}
