@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Aarit Gupta — AIoT, robotics and full-stack developer</title>
+  <desc id="desc">An animated dark gradient banner introducing Aarit Gupta, B.Tech Computer Science and Engineering at Dr. Ambedkar Institute of Technology, Bengaluru.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#07111f"><animate attributeName="stop-color" values="#07111f;#11133a;#062e3a;#07111f" dur="14s" repeatCount="indefinite"/></stop>
+      <stop offset="50%" stop-color="#12243d"><animate attributeName="stop-color" values="#12243d;#083b46;#312456;#12243d" dur="14s" repeatCount="indefinite"/></stop>
+      <stop offset="100%" stop-color="#102d3a"><animate attributeName="stop-color" values="#102d3a;#241a49;#0d3e45;#102d3a" dur="14s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <radialGradient id="glow"><stop stop-color="#22d3ee" stop-opacity=".24"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#9bdcf4" stroke-opacity=".08" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="24" fill="url(#grid)"/>
+  <ellipse cx="900" cy="170" rx="430" ry="260" fill="url(#glow)"/>
+  <g fill="none" stroke="#67e8f9" stroke-opacity=".36" stroke-width="1.5">
+    <path d="M780 74h92l28 28h116"/><path d="M850 240h82l34-34h150"/><path d="M1044 76v40l-25 25v58"/>
+    <circle cx="780" cy="74" r="4" fill="#67e8f9"/><circle cx="1016" cy="102" r="4" fill="#67e8f9"/><circle cx="1116" cy="240" r="4" fill="#67e8f9"/>
+  </g>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="82" y="128" fill="#f8fafc" font-size="52" font-weight="750" letter-spacing="1">AARIT GUPTA</text>
+    <text x="85" y="172" fill="#a5f3fc" font-size="20" font-weight="550">B.Tech CSE @ Dr. AIT, Bengaluru</text>
+    <text x="85" y="220" fill="#dbeafe" font-size="17">AIoT  ·  Autonomous Robotics  ·  Full-Stack Development</text>
+    <text x="85" y="274" fill="#67e8f9" font-size="13" letter-spacing="3">ENGINEERING INTELLIGENT SYSTEMS</text>
+  </g>
+</svg>
