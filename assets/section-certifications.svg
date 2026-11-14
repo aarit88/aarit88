@@ -1,0 +1,2 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="62" viewBox="0 0 1000 62"><defs><linearGradient id="a"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#818cf8"/></linearGradient></defs><rect x="0" y="25" width="1000" height="1" fill="#243b55"/><rect x="0" y="25" width="110" height="2" fill="url(#a)"><animate attributeName="x" values="0;890;0" dur="10s" repeatCount="indefinite"/></rect><text x="0" y="55" fill="#e2e8f0" font-family="Inter,Segoe UI,Arial" font-size="14" font-weight="700" letter-spacing="3">04  /  CERTIFICATES · HACKATHONS</text></svg>
+
